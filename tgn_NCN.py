@@ -38,9 +38,8 @@ from modules.memory_module import TGNMemory
 from modules.early_stopping import  EarlyStopMonitor
 from tgb.linkproppred.dataset_pyg import PyGLinkPropPredDataset
 
-from modules.NCNDecoder.NCNPred import NCNPredictor
-
-# from modules.NCNDecoder.utils import adjoverlap
+from NCNDecoder.NCNPred import NCNPredictor
+# from modules.NCNDecoder.NCNPred import NCNPredictor
 
 
 # ==========
@@ -243,8 +242,8 @@ start_overall = timeit.default_timer()
 args, _ = get_args()
 print("INFO: Arguments:", args)
 
-DATA = "tgbl-wiki"
-#DATA = "tgbl-coin"
+#DATA = "tgbl-wiki"
+DATA = "tgbl-coin"
 LR = args.lr
 BATCH_SIZE = args.bs
 K_VALUE = args.k_value  
